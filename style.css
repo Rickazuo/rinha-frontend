@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100dvh;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.initialScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.title {
+  color: #000;
+  font-family: Inter;
+  font-size: calc(24px + 2.5vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.subtitle {
+  color: #000;
+  font-family: Inter;
+  font-size: calc(12px + 0.5vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.custom-file-upload {
+  padding: 0.375rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #000;
+  opacity: 0.7;
+  background: linear-gradient(180deg, #e4e4e4 0%, #f7f7f7 100%);
+  cursor: pointer;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.custom-file-upload:hover {
+  filter: brightness(90%);
+  color: rgb(30, 31, 32);
+}
+
+.button {
+  display: none;
+}
+
+.returnButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.375rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #000;
+  opacity: 0.7;
+  background: linear-gradient(180deg, #e4e4e4 0%, #f7f7f7 100%);
+  cursor: pointer;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: none;
+}
+
+.returnButton:hover {
+  filter: brightness(90%);
+  color: rgb(30, 31, 32);
+}
+
+.output {
+  height: auto;
+  overflow: auto;
+}
+
+.output::-webkit-scrollbar {
+  width: 0.5em; /* Adjust the scrollbar width */
+}
+
+/* Style the scrollbar track (the area behind the thumb) */
+.output::-webkit-scrollbar-track {
+  background: transparent; /* Make the track background transparent */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.output::-webkit-scrollbar-thumb {
+  background: transparent; /* Adjust the thumb color to make it less visible */
+}

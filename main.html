@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinha do Frontend</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="initialScreen">
+      <h1 class="title">JSON Tree Viewer</h1>
+      <p class="subtitle">
+        Simple JSON Viewer that runs completely on-client. No data exchange
+      </p>
+      <label for="addJson" class="custom-file-upload">
+        <span>Load JSON</span>
+      </label>
+      <input
+        accept=".json"
+        class="button"
+        type="file"
+        name="addJson"
+        id="addJson"
+      />
+    </div>
+    <span id="fileName"></span>
+    <div class="output"></div>
+    <button class="returnButton" id="returnButton" type="submit">Return</button>
+    <script src="app.js"></script>
+  </body>
+</html>
