@@ -14,6 +14,7 @@ body {
   align-items: center;
 
   position: relative;
+  overflow-x: block;
 }
 
 .initialScreen {
@@ -101,21 +102,23 @@ body {
   color: rgb(30, 31, 32);
 }
 
+#fileName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  color: chocolate;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: bisque;
+}
+
 .output {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   height: auto;
-  overflow: auto;
-}
-
-.output::-webkit-scrollbar {
-  width: 0.5em; /* Adjust the scrollbar width */
-}
-
-/* Style the scrollbar track (the area behind the thumb) */
-.output::-webkit-scrollbar-track {
-  background: transparent; /* Make the track background transparent */
-}
-
-/* Style the scrollbar thumb (the draggable part) */
-.output::-webkit-scrollbar-thumb {
-  background: transparent; /* Adjust the thumb color to make it less visible */
+  overflow-y: auto;
 }
